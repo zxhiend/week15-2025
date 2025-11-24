@@ -33,3 +33,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export const db = prisma;
+// also export as `prisma` for files that import that name
+export { prisma };
