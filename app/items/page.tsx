@@ -4,7 +4,7 @@ import React from 'react';
 import AccountBalance from '../../components/AccountBalance';
 import { prisma } from '../../lib/prisma';
 
-// fetch all items directly from DB
+// fetch all items directly from the DB file
 async function getItems(): Promise<Item[]> {
   return prisma.item.findMany({
     orderBy: { date: 'desc' },
@@ -14,12 +14,12 @@ async function getItems(): Promise<Item[]> {
 export default async function ItemsPage() {
   const items = await getItems();
 
-  const typedItems = items as any[];
-  const totalIncome = typedItems
-    .filter((i) => i.type === 'INCOME')
+  const totalIncome = items
+    .filter((i) => (i as any).type === 'INCOME')
     .reduce((s, i) => s + i.amount, 0);
-  const totalExpense = typedItems
-    .filter((i) => i.type === 'EXPENSE')
+
+  const totalExpense = items
+    .filter((i) => (i as any).type === 'EXPENSE')
     .reduce((s, i) => s + i.amount, 0);
 
   const balance = totalIncome - totalExpense;
