@@ -1,16 +1,4 @@
 # NIM: 535240041
-# Financial Tracker
+# Financial Tracker in Vercel
 
-## setup
-1. install dan generate prisma
-
-```shell
-npm install
-npx prisma generate
-npx prisma migrate dev --name init
-```
-
-2. start dev server
-```shell
-npm run dev
-```
+[https://week15-2025-rgan1hksl-zxhiends-projects.vercel.app/items](https://week15-2025-rgan1hksl-zxhiends-projects.vercel.app/items)
