@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///D:/Personal%20File/UNTAR/Kuliah/Semester%203/1.%20Front-end%20Programming/Vercel/week15-2025/app/about/page.tsx"],"sourcesContent":["export default function AboutPage() {\r\n    return (\r\n        <div>\r\n            <h1>Ini adalah halaman About.</h1>\r\n        </div>\r\n    );\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,gVAAC;kBACG,cAAA,gVAAC;sBAAG;;;;;;;;;;;AAGhB"}}]
-}

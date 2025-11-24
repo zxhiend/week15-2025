@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///D:/Personal%20File/UNTAR/Kuliah/Semester%203/1.%20Front-end%20Programming/Vercel/week15-2025/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":[],"mappings":";;;;AAAA;;uCACe;IAAE,KAAA,qOAAG;IAAE,OAAO;IAAK,QAAQ;AAAI"}}]
-}
