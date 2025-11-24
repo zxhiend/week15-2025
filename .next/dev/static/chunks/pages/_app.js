@@ -1,0 +1,13 @@
+__turbopack_load_page_chunks__("/_app", [
+  "static/chunks/edded_next_dist_compiled_3c7fa377._.js",
+  "static/chunks/edded_next_dist_shared_lib_77806c34._.js",
+  "static/chunks/edded_next_dist_client_24829d04._.js",
+  "static/chunks/edded_next_dist_08cb86e5._.js",
+  "static/chunks/edded_next_app_e7469314.js",
+  "static/chunks/[next]_entry_page-loader_ts_2e20a32e._.js",
+  "static/chunks/edded_react-dom_fdc9ba2e._.js",
+  "static/chunks/edded_17cd3207._.js",
+  "static/chunks/[root-of-the-server]__4df26766._.js",
+  "static/chunks/22b84_Semester 3_1_ Front-end Programming_Vercel_week15-2025_pages__app_2da965e7._.js",
+  "static/chunks/7bdd5_Semester 3_1_ Front-end Programming_Vercel_week15-2025_pages__app_441dca07._.js"
+])

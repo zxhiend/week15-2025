@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///D:/Personal%20File/UNTAR/Kuliah/Semester%203/1.%20Front-end%20Programming/Vercel/week15-2025/app/page.tsx"],"sourcesContent":["export default function HomePage() {\n  return (\n    <div className=\"d-flex justify-content-center\">\n      <div className=\"card shadow-sm\" style={{ maxWidth: '48rem' }}>\n        <div className=\"card-body text-center py-5\">\n          <h1 className=\"card-title display-6 mb-2\">Faiz Abdurrahman</h1>\n          <h2 className=\"card-subtitle mb-3 text-muted\">NIM: 535240041</h2>\n          <p className=\"lead mb-4\">Topik project: Financial Tracker</p>\n          <div>\n            <a href=\"/items\" className=\"btn btn-primary me-2\">\n              Lihat Items\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  );\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,gVAAC;QAAI,WAAU;kBACb,cAAA,gVAAC;YAAI,WAAU;YAAiB,OAAO;gBAAE,UAAU;YAAQ;sBACzD,cAAA,gVAAC;gBAAI,WAAU;;kCACb,gVAAC;wBAAG,WAAU;kCAA4B;;;;;;kCAC1C,gVAAC;wBAAG,WAAU;kCAAgC;;;;;;kCAC9C,gVAAC;wBAAE,WAAU;kCAAY;;;;;;kCACzB,gVAAC;kCACC,cAAA,gVAAC;4BAAE,MAAK;4BAAS,WAAU;sCAAuB;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQ9D"}}]
+}
