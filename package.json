@@ -1,24 +1,25 @@
 {
-  "name": "week15-2025",
-  "version": "0.1.0",
+  "name": "financial-tracker",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init"
   },
   "dependencies": {
-    "next": "16.0.3",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "@prisma/client": "^5.0.0",
+    "bootstrap": "^5.3.2",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.3",
-    "typescript": "^5"
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.5",
+    "prisma": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }

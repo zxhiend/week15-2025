@@ -1,0 +1,27 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Item {
+  id          Int      @id @default(autoincrement())
+  description String
+  amount      Float
+  type        String   @default("EXPENSE")
+  category    String?
+  isRecurring Boolean  @default(false)
+  recurrence  String?
+  nextOccurrence DateTime?
+  date        DateTime @default(now())
+}
+
+model Account {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  balance   Float    @default(0)
+  updatedAt DateTime @updatedAt
+}
