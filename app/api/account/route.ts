@@ -17,6 +17,9 @@ export async function GET() {
 
 // PATCH account balance
 export async function PATCH(request: Request) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: "Read-only on Vercel" }, { status: 403 });
+  }
   try {
     const body = await request.json();
     if (typeof body.balance !== 'number') {

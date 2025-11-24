@@ -13,6 +13,9 @@ export async function GET() {
 
 // create new item
 export async function POST(request: Request) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: "Read-only on Vercel" }, { status: 403 });
+  }
   try {
     const body = await request.json();
     // simple validation; ensure description and amount exist

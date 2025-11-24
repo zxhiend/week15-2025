@@ -23,6 +23,9 @@ export async function GET(request: Request, context: any) {
 
 // update single item
 export async function PUT(request: Request, context: any) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: "Read-only on Vercel" }, { status: 403 });
+  }
   const id = await resolveId(context);
   if (isNaN(id)) {
     return NextResponse.json({ error: 'id tidak valid' }, { status: 400 });
@@ -65,6 +68,9 @@ export async function PUT(request: Request, context: any) {
 
 // handle metode override via post (dari form) untuk hapus
 export async function POST(request: Request, context: any) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: "Read-only on Vercel" }, { status: 403 });
+  }
   const formData = await request.formData();
   const method = formData.get('_method');
   if (method === 'DELETE') {
@@ -95,6 +101,9 @@ export async function POST(request: Request, context: any) {
 
 // delete single item
 export async function DELETE(request: Request, context: any) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: "Read-only on Vercel" }, { status: 403 });
+  }
   const id = await resolveId(context);
   if (isNaN(id)) {
     return NextResponse.json({ error: 'id tidak valid' }, { status: 400 });
